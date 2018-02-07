@@ -25,7 +25,7 @@ FILE内にあるURLから、atcoderのsubmit IDを持ってきます。
 
 
 #### 実行例
-標準入力からのとき
+標準入力(STDIN)からのとき
 > python3 atcid.py
 >
 >(IN) https://arc061.contest.atcoder.jp/tasks/arc061_a
@@ -36,14 +36,14 @@ FILE内にあるURLから、atcoderのsubmit IDを持ってきます。
 >
 >(OUT)2298 https://arc068.contest.atcoder.jp/tasks/arc068_a
 
-ファイルからのとき
+ファイル(FILE)からのとき
 > cat today-problems.txt
 > 
 > https://arc061.contest.atcoder.jp/tasks/arc061_a
 > 
 > https://arc068.contest.atcoder.jp/tasks/arc068_a
 >
-> python3 atcid.py -f 
+> python3 atcid.py -f today-problems.txt
 >
 >(OUT)2067 https://arc061.contest.atcoder.jp/tasks/arc061_a
 >
