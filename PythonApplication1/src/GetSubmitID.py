@@ -7,23 +7,18 @@ def NormalizeURL(URL):
     betamatch = re.match(r"https://beta.atcoder.jp",URL)
 
     if betamatch:
-        print("ベータだお")
         Contest_and_Problem = re.search(r"https://beta.atcoder.jp/contests/([a-zA-Z0-9]+)/tasks/(.+)",URL)
-        print(Contest_and_Problem)
         ContestName = (Contest_and_Problem.group(1))
         ProblemName =  (Contest_and_Problem.group(2))
         alphaURL = "https://" + ContestName + ".contest.atcoder.jp/tasks/" + ProblemName
-        print(alphaURL)
         return alphaURL
     else :
-        print("ベータではないお")
-
         return URL
 
 
 def GetSubmitID(URL):
     
-
+    URL = NormalizeURL(URL)
 
     res = requests.get(URL)
     res.raise_for_status()

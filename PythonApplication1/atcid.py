@@ -12,6 +12,7 @@ if __name__ == '__main__':
     if len(args) == 3: # file mode
         if args[1] == "-f":
             URLs = src.GetFromfileURL.GetfromfileURL(args[2])
+
             for URL in URLs:
                 IDs.append(src.GetSubmitID.GetSubmitID(URL))
         else :
