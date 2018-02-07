@@ -1,7 +1,6 @@
 import src
 import sys
-
-
+from colorama import init
 
 if __name__ == '__main__':
     IDs = []
@@ -17,12 +16,26 @@ if __name__ == '__main__':
                 IDs.append(src.GetSubmitID.GetSubmitID(URL))
         else :
             print(usege)
+
     elif len(args) == 1:
-        URL = str(input())
-        ID = src.GetSubmitID.GetSubmitID(URL)
-        IDs.append(ID)
-        URLs.append(URL)
+        URLs = list(src.InputSTDIN.get_input())
+        for URL in URLs:
+            print("URL is,",URL)
+            ID = src.GetSubmitID.GetSubmitID(URL)
+            IDs.append(ID)
+
     else :
         print(usege)
 
     src.PrintIDs.PrintIDs(IDs,URLs)
+
+    #OKBLUE = '\033[94m'
+    #OKGREEN = '\033[92m'
+    #WARNING = '\033[93m'
+    #FAIL = '\033[91m'
+    #ENDC = '\033[0m'
+
+    #print (OKBLUE + 'Blue' + ENDC)
+    #print (OKGREEN + 'Green' + ENDC)
+    #print (WARNING + 'Warning' + ENDC)
+    #print (FAIL + 'Fail' + ENDC)
