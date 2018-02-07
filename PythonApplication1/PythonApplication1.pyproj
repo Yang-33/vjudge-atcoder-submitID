@@ -29,9 +29,13 @@
     </Compile>
     <Compile Include="package1\GetSubmitID.py" />
     <Compile Include="src\GetSubmitID.py" />
+    <Compile Include="src\PrintIDs.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\__init__.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="package1\" />
     <Folder Include="src\" />
     <Folder Include="src\" />
   </ItemGroup>
