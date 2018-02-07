@@ -21,6 +21,6 @@ def GetSubmitID(URL):
 
 
 
-sub = "a"
-print(function(sub))
+#sub = "a"
+#print(function(sub))
 
