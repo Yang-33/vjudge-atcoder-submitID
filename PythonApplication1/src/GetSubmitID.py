@@ -2,8 +2,24 @@
 import requests, bs4
 import re
 
+def NormalizeURL(URL):
+    # beta って書いてあったらこれを正規化
+    betamatch = re.match(r"https://beta.atcoder.jp",URL)
+
+    if betamatch:
+        Contest_and_Problem = re.search(r"https://beta.atcoder.jp/contests/([a-zA-Z0-9]+)/tasks/(.+)",URL)
+        ContestName = (Contest_and_Problem.group(1))
+        ProblemName =  (Contest_and_Problem.group(2))
+        alphaURL = "https://" + ContestName + ".contest.atcoder.jp/tasks/" + ProblemName
+        return alphaURL
+    else :
+        return URL
+
+
 def GetSubmitID(URL):
     
+    URL = NormalizeURL(URL)
+
     res = requests.get(URL)
     res.raise_for_status()
 
@@ -16,3 +32,13 @@ def GetSubmitID(URL):
     
     return SubmitID
 
+#https://abc075.contest.atcoder.jp/tasks/abc075_c
+# ttps://CONTESTNAME.contest.atcoder.jp/tasks/PROBLEMNAME
+#https://beta.atcoder.jp/contests/abc075/tasks/abc075_c
+# ttps://bera.atcoder.jp/CONTESTNAME/tasks/PROBLEMNAME
+
+#みたいにおきかえればよい
+
+#txt = str(input())
+#URL = NormalizeURL(txt)
+#print(GetSubmitID(URL))
