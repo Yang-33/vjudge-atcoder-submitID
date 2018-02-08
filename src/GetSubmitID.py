@@ -7,7 +7,7 @@ def NormalizeURL(URL):
     betamatch = re.match(r"https://beta.atcoder.jp",URL)
 
     if betamatch:
-        Contest_and_Problem = re.search(r"https://beta.atcoder.jp/contests/([a-zA-Z0-9]+)/tasks/(.+)",URL)
+        Contest_and_Problem = re.search(r"https://beta.atcoder.jp/contests/([a-zA-Z0-9-]+)/tasks/(.+)",URL)
         ContestName = (Contest_and_Problem.group(1))
         ProblemName =  (Contest_and_Problem.group(2))
         alphaURL = "https://" + ContestName + ".contest.atcoder.jp/tasks/" + ProblemName
