@@ -11,6 +11,7 @@ beta版URLでも大丈夫です。
 `$ atcid.py [-f [FILE]] `
 
 引数にファイルを指定した際、FILE内にあるURLに対するsubmit IDを出力します。
+
 引数を指定せず実行した場合は標準入力でURLを記述(コピー)し、end of file 的なものを受け取るとそこまでのURLに対するsumbit IDを出力します。
 ```
 $ atcid.py 
