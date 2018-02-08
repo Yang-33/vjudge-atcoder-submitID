@@ -32,6 +32,9 @@
     <Compile Include="src\InputSTDIN.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\PrintColor.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\PrintIDs.py">
       <SubType>Code</SubType>
     </Compile>
