@@ -1,5 +1,0 @@
-https://agc001.contest.atcoder.jp/tasks/agc001_a
-https://cf16-exhibition-final-open.contest.atcoder.jp/tasks/cf16_exhibition_final_a
-https://beta.atcoder.jp/contests/cf16-exhibition-final-open/tasks/cf16_exhibition_final_b
-https://arc082.contest.atcoder.jp/tasks/arc082_c
-https://beta.atcoder.jp/contests/arc081/tasks/arc081_d
