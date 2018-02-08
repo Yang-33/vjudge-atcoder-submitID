@@ -1,1 +1,3 @@
 https://abc075.contest.atcoder.jp/tasks/abc075_c
+https://beta.atcoder.jp/contests/abc075/tasks/abc075_c
+https://beta.atcoder.jp/contests/abc085/tasks/abc085_c
