@@ -7,7 +7,7 @@ Vjudge‚Åatcoder‚Ì–â‘è‚ð“o˜^‚·‚éÛAsubmitID‚ð’²‚×‚é‚Ì‚ª‚ß‚ñ‚Ç‚­‚³‚¢‚Ì‚ÅƒXƒNƒŠƒvƒ
 beta”ÅURL‚Å‚à‘åä•v‚Å‚·B
 
 #### Žg‚¢•û
-> atcid.py -f [FILE]
+> atcid.py [-f [FILE]]
 
 FILE“à‚É‚ ‚éURL‚©‚çAatcoder‚Ìsubmit ID‚ðŽ‚Á‚Ä‚«‚Ü‚·B
 
@@ -21,30 +21,9 @@ FILE“à‚É‚ ‚éURL‚©‚çAatcoder‚Ìsubmit ID‚ðŽ‚Á‚Ä‚«‚Ü‚·B
 >
 > I’[
 
-•W€“ü—Í‚©‚çI’[‚Ü‚Å‚ÌURL‚©‚çAatcoder‚Ìsubmit ID‚ðŽ‚Á‚Ä‚«‚Ü‚·B
+•W€“ü—Í‚©‚çI’[‚Ü‚Å‚ÌURL‚É‚Â‚¢‚ÄAatcoder‚Ìsubmit ID‚ðŽ‚Á‚Ä‚«‚Ü‚·B
 
 
-#### ŽÀs—á
-•W€“ü—Í(STDIN)‚©‚ç‚Ì‚Æ‚«
-> python3 atcid.py
->
->(IN) https://arc061.contest.atcoder.jp/tasks/arc061_a
->
->(IN) https://arc068.contest.atcoder.jp/tasks/arc068_a
->
->(OUT)2067 https://arc061.contest.atcoder.jp/tasks/arc061_a
->
->(OUT)2298 https://arc068.contest.atcoder.jp/tasks/arc068_a
+#### Example
+![result](https://github.com/Yang-33/vjudge-atcoder-submitID/blob/media/capture.gif)
 
-ƒtƒ@ƒCƒ‹(FILE)‚©‚ç‚Ì‚Æ‚«
-> cat today-problems.txt
-> 
-> https://arc061.contest.atcoder.jp/tasks/arc061_a
-> 
-> https://arc068.contest.atcoder.jp/tasks/arc068_a
->
-> python3 atcid.py -f today-problems.txt
->
->(OUT)2067 https://arc061.contest.atcoder.jp/tasks/arc061_a
->
->(OUT)2298 https://arc068.contest.atcoder.jp/tasks/arc068_a
